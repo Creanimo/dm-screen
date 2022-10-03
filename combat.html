@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page combat">
+
+        <div class="container before-fight">
+            <h1>Before Fight</h1>
+            <div class="row">
+                <div class="col">
+                    <h2>Surprised?</h2>
+                    <ul>
+                        <li>No one stealthy = No surprise</li>
+                        <li>Stealth checks vs. passive perception</li>
+                        <li>Surprised = can't take action or reaction until their first turn ends.</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h2>Establish positions</h2>
+                    <ul>
+                        <li>may use previous marching order</li>
+                        <li>or ask players for preferred positions</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h2>Roll Initiative</h2>
+                    <ul>
+                        <li>groups may go as one</li>
+                        <li>when players tie, they decide who goes first</li>
+                        <li>player and monster tie = DM decides or rolls</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container conditions">
+            <h1>Conditions</h1>
+            <dl>
+                <dt>Blinded</dt>
+                <dd>fails ability checks requiring sight. Disadvantage on attacks. Attacks against with advantage.</dd>
+
+                <dt>Charmed</dt>
+                <dd>Can't harm charmer. Charmer has advantage on social interaction.</dd>
+
+                <dt>Deafened</dt>
+                <dd>fails ability checks requiring hearing.</dd>
+
+                <dt>Exhaustion</dt>
+                <dd>
+                    Not eating or drinking, 24 hours without long rest, traveling +8 hours, swimming +1 hour, some
+                    spells or creature abilities cause 1 or more level of exhaustion. 1 level of exhaustion is removed
+                    on long rest with food and water. You suffer current and all previous level.
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Disadvantage on ability checks</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Speed halved</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Disadvantage on attack rolls and saving throws</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Hit point maximum halved</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Speed reduced to 0</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Death</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </dd>
+
+                <dt>Frightened</dt>
+                <dd>Disadvantage on checks and attacks while source of fear in sight. Can't willingly move closer to it.
+                </dd>
+
+                <dt>Grappled</dt>
+                <dd>Speed 0. Ends if grappler incapacitated or removed from reach e.g. through Escape Action.</dd>
+
+                <dt>Incapacitated</dt>
+                <dd>Can't take actions or reactions.</dd>
+
+                <dt>Invisible</dt>
+                <dd>can't be seen without magic or special senses. Advantage on attack. Attacks against have
+                    disadvantage</dd>
+
+                <dt>Paralyzed</dt>
+                <dd>Incapacitated (no actions, reactions), can't move or speak. Attacks against have advantage. Any
+                    attack that hits is critical if attacker within 5ft. Fails STR and DEX saves.</dd>
+
+                <dt>Petrified</dt>
+                <dd>Incapacitated (no actions, reactions), can't move or speak, unaware of surroundings. Attacks against
+                    have advantage. Fails STR and DEX saves. Resistance to all damage. Immune to new poison and disease,
+                    existing ones are suspended. Weight times ten, cease aging.</dd>
+
+                <dt>Poisoned</dt>
+                <dd>Disadvantage on attacks and ability checks</dd>
+
+                <dt>Prone</dt>
+                <dd>Only crawl, unless standing up (costs half movement). Disadvantage when attacking. Attacks against
+                    have advantage if attacker within 5ft, otherwise disadvantage.</dd>
+
+                <dt>Resntrained</dt>
+                <dd>Speed 0. Disadvantage on attacks. Attacks against with advantage. Disadvantage on DEX saves.</dd>
+
+                <dt>Stunned</dt>
+                <dd>Incapacitated (no actions, reactions), can't move, speaks falteringly. Attacks against with
+                    advantage. Fails STR and DEX saves.</dd>
+
+                <dt>Unconscious</dt>
+                <dd>Incapacitated (no actions, reactions), can't move or speak, unaware of surroundings. Drops what they
+                    are holding, fall prone. Attacks against with advantage. Hit is critical if attacker within 5ft.
+                    Fails STR and DEX saves.</dd>
+            </dl>
+            <div class="container-2nd">
+                <h3>Concentration ends</h3>
+                <ul>
+                    <li>if willfully dropped, when incapacitated or killed</li>
+                    <li>another concentration spell is cast</li>
+                    <li>when taking damage or environmental effects: DC 10 or half damage taken, whichever higher</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="container combat-round">
+            <h1>Combat round</h1>
+            <div class="inline">
+                <h2>Movement</h2> - split up and taken at any point in turn
+            </div>
+            <p>Can't willingly end in another creature's space.</p>
+            <p>Another creature's space is difficult terrain (+5ft). Moving through a hostile creature only when two
+                sizes larger or smaller.</p>
+            <div class="row">
+                <div class="col">
+                    <table>
+                        <tr>
+                            <td>Move</td>
+                            <td>5ft</td>
+                            <td>for 5ft</td>
+                        </tr>
+                        <tr>
+                            <td>Climb <br>Swim <br> Crawl</td>
+                            <td>10ft</td>
+                            <td>for 5ft</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col">
+                    <table>
+                        <tr>
+                            <td>Drop prone</td>
+                            <td>0ft</td>
+                        </tr>
+                        <tr>
+                            <td>Stand up from prone</td>
+                            <td>Half movement</td>
+                        </tr>
+                        <tr>
+                            <td>Difficult terrain</td>
+                            <td>+5ft per 5ft</td>
+                        </tr>
+                        <tr>
+                            <td>Move with grappled</td>
+                            <td>speed halved</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+
+            <div class="inline">
+                <h2>Action</h2> 1 per turn, more with Extra/Multi-Attack
+            </div>
+            <div class="container-2nd">
+                <div class="inline">
+                    <h3>Attack</h3> roll melee or ranged attack: <span class="d20">d20</span> + <span
+                        class="ability-mod">ability modifier (e.g. STR or DEX)</span> + <span
+                        class="profic">proficiency</span> if greater or equal target AC = hits!
+                </div>
+                <p>Damage: <span class="dam-die">weapon damage</span> + <span class="ability-mod">ability
+                        modifier</span></p>
+
+
+                <div class="inline">
+                    <h4>Extra/Multi-Attack</h4> some features allow multiple attacks <strong>when attack action was
+                        taken.</strong>
+                </div>
+                <p>When one-handed attack with light melee weapon, attacker can use bonus action for offhand attack (no
+                    <span class="ability-mod">ability modifier</span> to damage unless a feat says otherwise)</p>
+
+                <div class="inline">
+                    <h4>Ranged Attacks</h4>When shooting through ally's spaces, target has 1/2 cover unless using feats
+                    like sharpshooter or spell-sniper.
+                </div>
+
+
+                <div class="row">
+                    <div class="col">
+                        <div class="inline">
+                            <h4>Advantage</h4> on the attack when
+                        </div>
+                        <ul>
+                            <li>against blinded, paralyzed, petrified, restrained, stunned, unconscious</li>
+                            <li>melee against prone</li>
+                            <li>attacker is invisible or hidden</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <div class="inline">
+                            <h4>Disadvantage</h4> on the attack when
+                        </div>
+                        <ul>
+                            <li>against invisible, hidden</li>
+                            <li>ranged against prone</li>
+                            <li>attacker is blinded, frightened, poisoned, restrained</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container-2nd">
+                <div class="inline">
+                    <h3>Spells</h3> - casting time 1 action
+                </div>
+                <p>If a spell was or will be cast as bonus action, action spell must be a cantrip.</p>
+                <p>Some spells just take effect, others are require...</p>
+                <div class="inline">
+                    <h4>Spell Attack</h4> <span class="d20">d20</span> + <span class="spell-attack-mod">spellcasting
+                        attack modifier (e.g. INT, WIS or CHAR modifier + proficiency)</span> if greater or equal target
+                    AC = hits!
+                </div>
+                <div class="inline">
+                    <h4>Saving Throw</h4> target needs to make a saving throw against <span class="spell-save-dc">Spells
+                        Save DC</span> 8 + <span class="spell-attack-mod">spellcasting attack modifier (e.g. INT, WIS or
+                        CHAR modifier + proficiency)</span>
+                </div>
+
+
+            </div>
+            <div class="container-2nd">
+                <div class="inline">
+                    <h3>Grapple</h3> target no more than one size larger, within reach, one free hand. Athletics
+                    contested by targets Athletics or Acrobatics. Can replace one attack of multi-attack. On success:
+                    target grappled
+                </div>
+
+                <div class="inline">
+                    <h3>Shove</h3> target no more than one size larger, within reach, one free hand. Athletics contested
+                    by targets Athletics or Acrobatics. Can replace one attack of multi-attack. On success: target is
+                    pushed 5ft away.
+                </div>
+
+                <div class="inline">
+                    <h3>Dash</h3> increases movement by speed ft
+                </div>
+
+                <div class="inline">
+                    <h3>Disengage</h3> Movement doesn't provoke opportunity attacks.
+                </div>
+
+                <div class="inline">
+                    <h3>Dodge</h3> until start of next turn attacks against have disadvantage if attacker in sight. Lost
+                    on incapacitated or speed 0.
+                </div>
+
+                <div class="inline">
+                    <h3>Escape</h3> from a grapple with Athletics or Acrobatics checck against grappler's Athletics.
+                </div>
+
+                <div class="inline">
+                    <h3>Help</h3> target gains advantage on next apility check or attack on creature within 5ft of
+                    helper. Until end of next turn.
+                </div>
+
+                <div class="inline">
+                    <h3>Use object</h3> one interaction (drawing weapon, opening door) free. Second one or object
+                    requiring an action takes this action.
+                </div>
+
+                <div class="inline">
+                    <h3>Use shield</h3> 1 action to (un)equip.
+                </div>
+
+                <div class="inline">
+                    <h3>Hide</h3> Can't hide from creature that sees you. Must have total cover, heavily obscured area,
+                    invisibility. To hide Stealth Check. It's contested by Passive Perception or when actively searching
+                    PER check
+                </div>
+
+                <div class="inline">
+                    <h3>Ready</h3> choose what trigger causes what action (or move instead) as a reaction. Choice to
+                    react or ignore trigger. Readied spells consume spell slot even if not used.
+                </div>
+
+
+            </div>
+            <div class="inline">
+                <h2>Bonus action</h2> max. 1 per turn
+            </div>
+            <div class="container-2nd">
+                <div class="inline">
+                    <h3>Offhand Attack</h3> only after using Attack action with one-handed light melee weapon, using
+                    another light melee weapon in other hand. No ability modifier added to damage unless modifier is
+                    negative. Can use thrown property.
+                </div>
+                <div class="inline">
+                    <h3>Spell</h3> with 1 bonus action casting time. When casting a spell with bonus action can't cast a
+                    different spell other than cantrips with action.
+                </div>
+
+
+            </div>
+
+            <div class="inline">
+                <h2>Reaction</h2> max. 1 per round
+            </div>
+            <div class="container-2nd">
+                <div class="inline">
+                    <h3>Opportunity attack</h3> Trigger: enemy leaves reach. Can make one melee attack against provoking
+                    creature interrupting its movement. Not triggered on teleport or when no willing movement.
+                </div>
+                <div class="inline">
+                    <h3>Cast a Reaction Spell</h3> For specific spells and feats on specified triggers only.
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container class-abilities">
+            <h1>Class Features</h1>
+            <h2>Barbarian</h2>
+            <div class="inline">
+                <h3>Rage</h3> adds to damage Lvl 1-8: +2, Lvl: 9-15 +3, Lvl 16+: +4
+            </div>
+            <div class="inline">
+                <h3>Reckless Attack</h3> when first attack choice to use, then advantage on melee weapon attacks using
+                STR, but attack against have advantage until next turn.
+            </div>
+            <h2>Rogue</h2>
+            <div class="inline">
+                <h3>Sneak Attack</h3> when having advantage or another enemy of target within 5ft and no disadvantage =
+                extra damage lvl 1-2: 1d6, lvl 3-4: 2d6, lvl 5-6: 3d6, lvl 7-8: 4d6,...
+            </div>
+        </div>
+
+        <div class="container visibility">
+            <div class="container-cover">
+                <h1>Sight & Cover</h1>
+                <table>
+                    <tr>
+                        <td>Half Cover</td>
+                        <td>+2 to AC</td>
+                    </tr>
+                    <tr>
+                        <td>3/4 Cover</td>
+                        <td>+4 to AC</td>
+                    </tr>
+                    <tr>
+                        <td>Total Cover</td>
+                        <td>Area of Effect Only</td>
+                    </tr>
+                    <tr>
+                        <td>Lightly Obscured</td>
+                        <td>Disadvantage on Perception. Happens in Dim Light.</td>
+                    </tr>
+                    <tr>
+                        <td>Heavily Obscured</td>
+                        <td>Like blinded. Happens in Darkness.</td>
+                    </tr>
+                    <tr>
+                        <td>Blindsight</td>
+                        <td>Perceives not relying on sight.</td>
+                    </tr>
+                    <tr>
+                        <td>Darkvision</td>
+                        <td>Vision in darkness as if in dim light, grayscale</td>
+                    </tr>
+                    <tr>
+                        <td>Truesight</td>
+                        <td>See in darkness, sees invisible, original form of illusions, shapechanger and magic
+                            transformation and into Ethereal Plane.</td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

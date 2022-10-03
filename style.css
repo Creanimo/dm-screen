@@ -1,0 +1,129 @@
+* {
+  -webkit-print-color-adjust: exact;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-size: 71%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page.combat {
+  display: grid;
+  grid-template-areas: "c c a a a" "c c b b b" "d d b b b" "e e b b b";
+  grid-gap: 0.6rem;
+}
+
+.container {
+  padding: 0.6rem;
+  background-color: #ddd;
+}
+
+.container-2nd {
+  padding: 0.6rem;
+  background-color: #eee;
+  margin-bottom: 0.6rem;
+}
+
+.container.before-fight {
+  grid-area: a;
+}
+
+.container.conditions {
+  grid-area: c;
+}
+
+.container.combat-round {
+  grid-area: b;
+}
+
+.container.visibility {
+  grid-area: d;
+}
+
+.container.class-abilities {
+  grid-area: e;
+}
+
+.row {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  grid-gap: 0.4rem;
+}
+
+table {
+  border: 1px solid #999;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid #999;
+  padding: 2px;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+}
+
+h2, h3, h4, h5 {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+p, .inline, table, .row {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+dd, dt {
+  display: inline;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+}
+
+dd:after {
+  content: "";
+  display: block;
+  margin-top: 0.4rem;
+}
+
+.inline h1, .inline h2, .inline h3, .inline h4, .inline h5 {
+  display: inline;
+}
+
+@media print {
+  ul, li {
+    margin: 0;
+  }
+}/*# sourceMappingURL=style.css.map */

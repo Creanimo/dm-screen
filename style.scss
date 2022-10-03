@@ -1,0 +1,138 @@
+$spacing-md: .6rem;
+$spacing-sm: .4rem;
+$table-border: 1px solid #999;
+
+* {
+    -webkit-print-color-adjust: exact;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-size: 71%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page.combat {
+    display: grid;
+    grid-template-areas:
+        "c c a a a"
+        "c c b b b"
+        "d d b b b"
+        "e e b b b";
+    grid-gap: $spacing-md;
+}
+
+.container {
+    padding: $spacing-md;
+    background-color: #ddd;
+}
+
+.container-2nd {
+    padding: $spacing-md;
+    background-color: #eee;
+    margin-bottom: $spacing-md;
+}
+
+.container.before-fight {
+    grid-area: a;
+}
+
+.container.conditions {
+    grid-area: c;
+}
+
+.container.combat-round {
+    grid-area: b;
+}
+
+.container.visibility {
+    grid-area: d;
+}
+
+.container.class-abilities {
+    grid-area: e;
+}
+
+.row {
+    display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  grid-gap: $spacing-sm;
+}
+
+.col {
+
+}
+
+table {
+    border: $table-border;
+    border-collapse: collapse;
+}
+
+td {
+    border: $table-border;
+    padding:2px;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: $spacing-md;
+}
+
+h2, h3, h4, h5 {
+    margin-top: 0;
+    margin-bottom: $spacing-sm;
+}
+
+h1 {
+    font-size: 1.6rem;
+}
+h2 {
+    font-size: 1.4rem;
+}
+h3 {
+    font-size: 1.2rem;
+}
+h3 {
+    font-size: 1rem;
+}
+
+p, .inline, table, .row {
+    margin-top: 0;
+    margin-bottom: $spacing-sm;
+}
+
+ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+dd, dt {
+    display: inline;
+}
+
+dt {
+    font-weight: bold;
+}
+dd {
+    margin-inline-start: 0;
+}
+
+dd:after {
+    content: "";
+    display: block;
+    margin-top: $spacing-sm;
+}
+
+.inline {
+    h1, h2, h3, h4, h5 {
+        display: inline;
+    }
+}
+
+@media print {
+    ul, li {
+        margin: 0;
+    }
+}
